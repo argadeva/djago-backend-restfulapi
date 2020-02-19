@@ -128,7 +128,7 @@ module.exports = {
   countProduct: () => {
     return new Promise((resolve, reject) => {
       connection.query(
-        "SELECT COUNT (*) as rom FROM products",
+        "SELECT COUNT (*) as rom FROM products WHERE deleted = 0",
         (err, result) => {
           if (!err) {
             resolve(result);
