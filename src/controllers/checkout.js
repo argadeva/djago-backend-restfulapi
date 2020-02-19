@@ -40,7 +40,13 @@ module.exports = {
     token = req.headers["x-access-token"];
     id_users = token.substr(0, token.indexOf("#"));
     const { order_number } = req.body;
-    const data = { order_number, user_id: id_users };
+    const data = {
+      order_number,
+      user_id: id_users,
+      sub_total: 0,
+      ppn: 0,
+      total: 0
+    };
     checkoutModel
       .addCheckout(data)
       .then(result => {
