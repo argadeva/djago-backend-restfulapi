@@ -1,6 +1,6 @@
 ## Introduction
 
-D'Jago is a Point of Sale systems with restful api. The main features are:
+D'Jago Backend RestFulAPI is a Point of Sale systems with restful api. The main features are:
 
 - Login and Register with JWT.
 - User, Categories and Products database.
@@ -14,7 +14,7 @@ D'Jago is a Point of Sale systems with restful api. The main features are:
 - Allowed CORS
 - Reporting on income today, yearly, and orders weekly.
 
-The POS-RESTfulAPI is written in Node Js with Express framework, it uses MySQL as data storage back-end and has a simple but intuitive user interface.
+D'Jago Backend RestFulAPI is written in Node Js with Express framework, it uses MySQL as data storage back-end and has a simple but intuitive user interface.
 
 ## Flowchart
 
