@@ -17,6 +17,7 @@
   <a href="#introduction">Introduction</a> •
   <a href="#flowchart">Flowchart</a> •
   <a href="#how-to-use">How To Use</a> •
+  <a href="#related-project ">Related Project</a> •
   <a href="#api-versioning">API Versioning</a> •
   <a href="#list-of-endpoints">List of Endpoints</a>
 </p>
@@ -72,6 +73,11 @@ DB_NAME = "your-database"
 PRIVATE_KEY = "your-private-key"
 URL = "http://localhost:1000/"
 ```
+
+## Related Project
+
+- [`D'Jago Frontend React Redux (Front-end Web App)`](https://github.com/argadeva/djago-frontend-react-redux)
+- [`D'Jago React Native (Mobile App)`](https://github.com/argadeva/djago-react-native)
 
 ## API Versioning
 
