@@ -1,4 +1,7 @@
 <h1 align="center">D'Jago Backend RestFulAPI</h1>
+<p align="center">
+  <img width="250" src="demo/logo.png"/>
+</p>
 
 ## Introduction
 
