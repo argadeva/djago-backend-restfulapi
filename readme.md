@@ -50,19 +50,22 @@ D'Jago Backend RestFulAPI is written in Node Js with Express framework, it uses 
 ## How To Install
 
 1. Clone this repository
+
    ```
    $ git clone https://github.com/argadeva/djago-backend-restfulapi.git
    ```
+
 2. Create a database and import file [database.sql](https://github.com/argadeva/djago-backend-restfulapi/raw/master/demo/database.sql) to database.
 
 3. Install all depedencies on the package.json
+
    ```
    $ cd djago-backend-restfulapi
    $ npm install
    ```
 
-   ```
 4. Create `.env` file with environment variable in line with following:
+
    ```
    SERVER_PORT = 1000
    DB_HOST = "localhost"
@@ -72,7 +75,9 @@ D'Jago Backend RestFulAPI is written in Node Js with Express framework, it uses 
    PRIVATE_KEY = "your-private-key"
    URL = "http://localhost:1000/"
    ```
+
 5. Run
+
    ```
    $ npm start
    ```
