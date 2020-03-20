@@ -1,14 +1,14 @@
 <h1 align="center">
-  <br>
-  <img src="https://github.com/argadeva/djago-backend-restfulapi/raw/master/demo/logo.png" width="200">
-  <br>
-  D'Jago Backend RestFulAPI
-  <br>
+<br>
+<img src="https://github.com/argadeva/djago-backend-restfulapi/raw/master/demo/logo.png" width="200">
+<br>
+D'Jago Backend RestFulAPI
+<br>
 </h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Node.js-v12.14.1-success">
-  <img src="https://img.shields.io/badge/Express.js-v.4.17.1-informational">
+<img src="https://img.shields.io/badge/Node.js-v12.14.1-success">
+<img src="https://img.shields.io/badge/Express.js-v.4.17.1-informational">
 </p>
 
 ## Table of Contents
@@ -51,36 +51,36 @@ D'Jago Backend RestFulAPI is written in Node Js with Express framework, it uses 
 
 1. Clone this repository
 
-   ```
-   $ git clone https://github.com/argadeva/djago-backend-restfulapi.git
-   ```
+```
+$ git clone https://github.com/argadeva/djago-backend-restfulapi.git
+```
 
 2. Create a database and import file [database.sql](https://github.com/argadeva/djago-backend-restfulapi/raw/master/demo/database.sql) to database.
 
 3. Install all depedencies on the package.json
 
-   ```
-   $ cd djago-backend-restfulapi
-   $ npm install
-   ```
+```
+$ cd djago-backend-restfulapi
+$ npm install
+```
 
 4. Create `.env` file with environment variable in line with following:
 
-   ```
-   SERVER_PORT = 1000
-   DB_HOST = "localhost"
-   DB_USER = "your-user"
-   DB_PASS = "your-password"
-   DB_NAME = "your-database"
-   PRIVATE_KEY = "your-private-key"
-   URL = "http://localhost:1000/"
-   ```
+```
+SERVER_PORT = 1000
+DB_HOST = "localhost"
+DB_USER = "your-user"
+DB_PASS = "your-password"
+DB_NAME = "your-database"
+PRIVATE_KEY = "your-private-key"
+URL = "http://localhost:1000/"
+```
 
 5. Run
 
-   ```
-   $ npm start
-   ```
+```
+$ npm start
+```
 
 ## API Versioning
 
@@ -98,216 +98,216 @@ https://localhost:1000/api/v1/
 
 - **[GET]** /api/v1/users
 
-      	Get all users
+Get all users
 
 - **[GET]** /api/v1/users/:id
 
-      	Get user detail
+Get user detail
 
 - **[PATCH]** /api/v1/users/:id
 
-      	Update user data
+Update user data
 
-  **Sample Data**
+**Sample Data**
 
-  ```
-  name: your-name
-  email: your-email
-  password: your-password
-  ```
+```
+name: your-name
+email: your-email
+password: your-password
+```
 
 - **[DELETE]** /v1/users/:id
 
-      	Delete user
+Delete user
 
 - **[POST]** /api/v1/users
 
-      	Insert new user
+Insert new user
 
-  **Sample Data**
+**Sample Data**
 
-  ```
-  name: your-name
-  email: your-email
-  password: your-password
-  ```
+```
+name: your-name
+email: your-email
+password: your-password
+```
 
 - **[POST]** /api/v1/users/login {email, password}
 
-      	Login user
+Login user
 
-  **Sample Data**
+**Sample Data**
 
-  ```
-  email: your-email
-  password: your-password
-  ```
+```
+email: your-email
+password: your-password
+```
 
 - **[POST]** /api/v1/users/logout
 
-      	Logout user
+Logout user
 
 **CATEGORIES**
 
 - **[GET]** /api/v1/categories
 
-      	Get all categories
+Get all categories
 
 - **[GET]** /api/v1/categories/:id
 
-      	Get categories detail
+Get categories detail
 
 - **[PATCH]** /api/v1/categories/:id
 
-      	Update categories data
+Update categories data
 
-  **Sample Data**
+**Sample Data**
 
-  ```
-  name: your-name-categories
-  ```
+```
+name: your-name-categories
+```
 
 - **[DELETE]** /v1/categories/:id
 
-      	Delete categories
+Delete categories
 
 - **[POST]** /api/v1/categories
 
-      	Insert categories
+Insert categories
 
-  **Sample Data**
+**Sample Data**
 
-  ```
-  name: your-name-categories
-  ```
+```
+name: your-name-categories
+```
 
 **PRODUCTS**
 
 - **[GET]** /api/v1/products
 
-      	Get all products
+Get all products
 
 - **[GET]** /api/v1/products/:id
 
-      	Get products detail
+Get products detail
 
 - **[PATCH]** /api/v1/products/:id
 
-      	Update products data
+Update products data
 
-  **Sample Data**
+**Sample Data**
 
-  ```
-  name: product-name
-  description: product-description
-  image: product-image-url
-  price: product-price
-  category_id: product-category_id
-  ```
+```
+name: product-name
+description: product-description
+image: product-image-url
+price: product-price
+category_id: product-category_id
+```
 
 - **[DELETE]** /v1/products/:id
 
-      	Delete products
+Delete products
 
 - **[POST]** /api/v1/products
 
-      	Insert products
+Insert products
 
-  **Sample Data**
+**Sample Data**
 
-  ```
-  name: product-name
-  description: product-description
-  image: product-image-url
-  price: product-price
-  category_id: product-category_id
-  ```
+```
+name: product-name
+description: product-description
+image: product-image-url
+price: product-price
+category_id: product-category_id
+```
 
 - **[GET]** /api/v1/products/search/:name
 
-      	Search products by name
+Search products by name
 
 - **[GET]** /api/v1/products/sort/:sort
 
-      	Sort products by name, category, last_update
+Sort products by name, category, last_update
 
 - **[GET]** /api/v1/products/page/:page
 
-      	Get products list with pagination
+Get products list with pagination
 
 **STOCKS**
 
 - **[GET]** /api/v1/stocks
 
-      	Get all stocks
+Get all stocks
 
 - **[PATCH]** /api/v1/stocks/:id
 
-      	Update stocks data
+Update stocks data
 
-  **Sample Data**
+**Sample Data**
 
-  ```
-  product_id: product-id
-  type: ENUM("IN/OUT")
-  qty: Integer Number
-  description: your-description
-  ```
+```
+product_id: product-id
+type: ENUM("IN/OUT")
+qty: Integer Number
+description: your-description
+```
 
 - **[DELETE]** /v1/stocks/:id
 
-      	Delete stocks
+Delete stocks
 
 - **[POST]** /api/v1/stocks
 
-      	Insert stocks
+Insert stocks
 
-  **Sample Data**
+**Sample Data**
 
-  ```
-  product_id: product-id
-  type: ENUM("IN/OUT")
-  qty: Integer Number
-  description: your-description
-  ```
+```
+product_id: product-id
+type: ENUM("IN/OUT")
+qty: Integer Number
+description: your-description
+```
 
 **CHECKOUT**
 
 - **[GET]** /api/v1/checkout
 
-      	Get all checkout
+Get all checkout
 
 - **[GET]** /api/v1/checkout/cart
 
-      	Get checkout from user login
+Get checkout from user login
 
 - **[POST]** /api/v1/checkout
 
-      	Insert checkout
+Insert checkout
 
-  **Sample Data**
+**Sample Data**
 
-  ```
-  order_number: your-order-number
-  ```
+```
+order_number: your-order-number
+```
 
 - **[POST]** /api/v1/checkout/cart
 
-      	Insert product to checkout cart
+Insert product to checkout cart
 
-  **Sample Data**
+**Sample Data**
 
-  ```
-  order_id: order-id
-  product_id: product-id
-  qty: order-product-qty
-  ```
+```
+order_id: order-id
+product_id: product-id
+qty: order-product-qty
+```
 
 **HISTORY**
 
 - **[GET]** /api/v1/history
 
-      	Get reporting on income today, yearly, and orders weekly
+Get reporting on income today, yearly, and orders weekly
 
 ## Related Project
 
