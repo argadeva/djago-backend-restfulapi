@@ -97,216 +97,216 @@ https://localhost:1000/api/v1/
 
 - **[GET]** /api/v1/users
 
-Get all users
+  Get all users
 
 - **[GET]** /api/v1/users/:id
 
-Get user detail
+  Get user detail
 
 - **[PATCH]** /api/v1/users/:id
 
-Update user data
+  Update user data
 
-**Sample Data**
+  **Sample Data**
 
-```
-name: your-name
-email: your-email
-password: your-password
-```
+  ```
+  name: your-name
+  email: your-email
+  password: your-password
+  ```
 
 - **[DELETE]** /v1/users/:id
 
-Delete user
+  Delete user
 
 - **[POST]** /api/v1/users
 
-Insert new user
+  Insert new user
 
-**Sample Data**
+  **Sample Data**
 
-```
-name: your-name
-email: your-email
-password: your-password
-```
+  ```
+  name: your-name
+  email: your-email
+  password: your-password
+  ```
 
 - **[POST]** /api/v1/users/login {email, password}
 
-Login user
+  Login user
 
 **Sample Data**
 
-```
-email: your-email
-password: your-password
-```
+    ```
+    email: your-email
+    password: your-password
+    ```
 
 - **[POST]** /api/v1/users/logout
 
-Logout user
+  Logout user
 
 **CATEGORIES**
 
 - **[GET]** /api/v1/categories
 
-Get all categories
+  Get all categories
 
 - **[GET]** /api/v1/categories/:id
 
-Get categories detail
+  Get categories detail
 
 - **[PATCH]** /api/v1/categories/:id
 
 Update categories data
 
-**Sample Data**
+    **Sample Data**
 
-```
-name: your-name-categories
-```
+    ```
+    name: your-name-categories
+    ```
 
 - **[DELETE]** /v1/categories/:id
 
-Delete categories
+  Delete categories
 
 - **[POST]** /api/v1/categories
 
-Insert categories
+  Insert categories
 
-**Sample Data**
+  **Sample Data**
 
-```
-name: your-name-categories
-```
+  ```
+  name: your-name-categories
+  ```
 
 **PRODUCTS**
 
 - **[GET]** /api/v1/products
 
-Get all products
+  Get all products
 
 - **[GET]** /api/v1/products/:id
 
-Get products detail
+  Get products detail
 
 - **[PATCH]** /api/v1/products/:id
 
-Update products data
+  Update products data
 
-**Sample Data**
+  **Sample Data**
 
-```
-name: product-name
-description: product-description
-image: product-image-url
-price: product-price
-category_id: product-category_id
-```
+  ```
+  name: product-name
+  description: product-description
+  image: product-image-url
+  price: product-price
+  category_id: product-category_id
+  ```
 
 - **[DELETE]** /v1/products/:id
 
-Delete products
+  Delete products
 
 - **[POST]** /api/v1/products
 
-Insert products
+  Insert products
 
-**Sample Data**
+  **Sample Data**
 
-```
-name: product-name
-description: product-description
-image: product-image-url
-price: product-price
-category_id: product-category_id
-```
+  ```
+  name: product-name
+  description: product-description
+  image: product-image-url
+  price: product-price
+  category_id: product-category_id
+  ```
 
 - **[GET]** /api/v1/products/search/:name
 
-Search products by name
+  Search products by name
 
 - **[GET]** /api/v1/products/sort/:sort
 
-Sort products by name, category, last_update
+  Sort products by name, category, last_update
 
 - **[GET]** /api/v1/products/page/:page
 
-Get products list with pagination
+  Get products list with pagination
 
 **STOCKS**
 
 - **[GET]** /api/v1/stocks
 
-Get all stocks
+  Get all stocks
 
 - **[PATCH]** /api/v1/stocks/:id
 
-Update stocks data
+  Update stocks data
 
-**Sample Data**
+  **Sample Data**
 
-```
-product_id: product-id
-type: ENUM("IN/OUT")
-qty: Integer Number
-description: your-description
-```
+  ```
+  product_id: product-id
+  type: ENUM("IN/OUT")
+  qty: Integer Number
+  description: your-description
+  ```
 
 - **[DELETE]** /v1/stocks/:id
 
-Delete stocks
+  Delete stocks
 
 - **[POST]** /api/v1/stocks
 
-Insert stocks
+  Insert stocks
 
-**Sample Data**
+  **Sample Data**
 
-```
-product_id: product-id
-type: ENUM("IN/OUT")
-qty: Integer Number
-description: your-description
-```
+  ```
+  product_id: product-id
+  type: ENUM("IN/OUT")
+  qty: Integer Number
+  description: your-description
+  ```
 
 **CHECKOUT**
 
 - **[GET]** /api/v1/checkout
 
-Get all checkout
+  Get all checkout
 
 - **[GET]** /api/v1/checkout/cart
 
-Get checkout from user login
+  Get checkout from user login
 
 - **[POST]** /api/v1/checkout
 
-Insert checkout
+  Insert checkout
 
-**Sample Data**
+  **Sample Data**
 
-```
-order_number: your-order-number
-```
+  ```
+  order_number: your-order-number
+  ```
 
 - **[POST]** /api/v1/checkout/cart
 
-Insert product to checkout cart
+  Insert product to checkout cart
 
-**Sample Data**
+  **Sample Data**
 
-```
-order_id: order-id
-product_id: product-id
-qty: order-product-qty
-```
+  ```
+  order_id: order-id
+  product_id: product-id
+  qty: order-product-qty
+  ```
 
 **HISTORY**
 
 - **[GET]** /api/v1/history
 
-Get reporting on income today, yearly, and orders weekly
+  Get reporting on income today, yearly, and orders weekly
 
 ## Related Project
 
