@@ -6,21 +6,18 @@
   <br>
 </h1>
 
-<h4 align="center">Built with NodeJS using the ExpressJS Framework. ExpressJS is a web application framework for NodeJS. <a href="https://en.wikipedia.org/wiki/Express.js" target="_blank">More about Express</a></h4>
-
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-v12.14.1-success">
   <img src="https://img.shields.io/badge/Express.js-v.4.17.1-informational">
 </p>
 
-<p align="center">
-  <a href="#introduction">Introduction</a> •
-  <a href="#flowchart">Flowchart</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#related-project ">Related Project</a> •
-  <a href="#api-versioning">API Versioning</a> •
-  <a href="#list-of-endpoints">List of Endpoints</a>
-</p>
+## Table of Contents
+
+- [Introduction](#introduction)
+- [How To Install](#how-to-install)
+- [API Versioning](#api-versioning)
+- [List of Endpoints](#list-of-endpoints)
+- [Related Project](#related-project)
 
 ## Introduction
 
@@ -50,34 +47,35 @@ D'Jago Backend RestFulAPI is a Point of Sale systems with restful api. The main 
 
 D'Jago Backend RestFulAPI is written in Node Js with Express framework, it uses MySQL as data storage back-end and has a simple but intuitive user interface.
 
-## Flowchart
+## How To Install
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggTFJcbiAgICBBe1VTRVJTfSAtLT4gQihSRUdJU1RFUilcbiAgICBBIC0tPiBDKChMT0dJTikpXG4gICAgQiAtLT4gQ1xuICAgIEMgLS0-IEUoQ0FURUdPUklFUylcbiAgICBFIC0tPiBGXG4gICAgQyAtLT4gRihQUk9EVUNUUylcbiAgICBHIC0tPiBLW0lOXVxuICAgIEsgLS0-IEZcbiAgICBHIC0tPiBMW09VVF1cbiAgICBMIC0tPiBGXG4gICAgQyAtLT4gRyhTVE9DS1MpXG4gICAgQyAtLT4gSChDSEVDS09VVClcbiAgICBGIC0tPiBIXG4gICAgQyAtLT4gSXtISVNUT1JZfVxuICAgIEggLS0-IElcbiAgICBDIC0tPiBKKChMT0dPVVQpKSIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggTFJcbiAgICBBe1VTRVJTfSAtLT4gQihSRUdJU1RFUilcbiAgICBBIC0tPiBDKChMT0dJTikpXG4gICAgQiAtLT4gQ1xuICAgIEMgLS0-IEUoQ0FURUdPUklFUylcbiAgICBFIC0tPiBGXG4gICAgQyAtLT4gRihQUk9EVUNUUylcbiAgICBHIC0tPiBLW0lOXVxuICAgIEsgLS0-IEZcbiAgICBHIC0tPiBMW09VVF1cbiAgICBMIC0tPiBGXG4gICAgQyAtLT4gRyhTVE9DS1MpXG4gICAgQyAtLT4gSChDSEVDS09VVClcbiAgICBGIC0tPiBIXG4gICAgQyAtLT4gSXtISVNUT1JZfVxuICAgIEggLS0-IElcbiAgICBDIC0tPiBKKChMT0dPVVQpKSIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
+1. Clone this repository
+   ```
+   $ git clone https://github.com/argadeva/djago-backend-restfulapi.git
+   ```
+2. Create a database and import file [database.sql](https://github.com/argadeva/djago-backend-restfulapi/raw/master/demo/database.sql) to database.
 
-## How To Use
+3. Install all depedencies on the package.json
+   ```
+   $ cd djago-backend-restfulapi
+   $ npm install
+   ```
 
-- Please make sure that you have : node.js installed ([https://nodejs.org/](https://nodejs.org/))
-
-- Download or clone this file and then config & import MySQL database.
-
-- You can use [POSTMAN](https://www.getpostman.com/) or anything else for simulate.
-
-- The app loads the environment variable by reading `.env` file in the root directory of the project. Create `.env` file with environment variable in line with following:
-
-```
-SERVER_PORT = 1000
-DB_HOST = "localhost"
-DB_USER = "your-user"
-DB_PASS = "your-password"
-DB_NAME = "your-database"
-PRIVATE_KEY = "your-private-key"
-URL = "http://localhost:1000/"
-```
-
-## Related Project
-
-- [`D'Jago Frontend React Redux (Front-end Web App)`](https://github.com/argadeva/djago-frontend-react-redux)
-- [`D'Jago React Native (Mobile App)`](https://github.com/argadeva/djago-react-native)
+   ```
+4. Create `.env` file with environment variable in line with following:
+   ```
+   SERVER_PORT = 1000
+   DB_HOST = "localhost"
+   DB_USER = "your-user"
+   DB_PASS = "your-password"
+   DB_NAME = "your-database"
+   PRIVATE_KEY = "your-private-key"
+   URL = "http://localhost:1000/"
+   ```
+5. Run
+   ```
+   $ npm start
+   ```
 
 ## API Versioning
 
@@ -93,128 +91,220 @@ https://localhost:1000/api/v1/
 
 **USERS**
 
-- [GET] /api/v1/users
+- **[GET]** /api/v1/users
 
-Get all users
+      	Get all users
 
-- [GET] /api/v1/users/:id
+- **[GET]** /api/v1/users/:id
 
-Get user detail
+      	Get user detail
 
-- [PATCH] /api/v1/users/:id {name, email, password}
+- **[PATCH]** /api/v1/users/:id
 
-Update user data
+      	Update user data
 
-- [DELETE] /v1/users/:id
+  **Sample Data**
 
-Delete user
+  ```
+  name: your-name
+  email: your-email
+  password: your-password
+  ```
 
-- [POST] /api/v1/users {name, email, password}
+- **[DELETE]** /v1/users/:id
 
-Insert user
+      	Delete user
 
-- [POST] /api/v1/users/login {email, password}
+- **[POST]** /api/v1/users
 
-Login user
+      	Insert new user
 
-- [POST] /api/v1/users/logout
+  **Sample Data**
 
-Logout user
+  ```
+  name: your-name
+  email: your-email
+  password: your-password
+  ```
+
+- **[POST]** /api/v1/users/login {email, password}
+
+      	Login user
+
+  **Sample Data**
+
+  ```
+  email: your-email
+  password: your-password
+  ```
+
+- **[POST]** /api/v1/users/logout
+
+      	Logout user
 
 **CATEGORIES**
 
-- [GET] /api/v1/categories
+- **[GET]** /api/v1/categories
 
-Get all categories
+      	Get all categories
 
-- [GET] /api/v1/categories/:id
+- **[GET]** /api/v1/categories/:id
 
-Get categories detail
+      	Get categories detail
 
-- [PATCH] /api/v1/categories/:id {name}
+- **[PATCH]** /api/v1/categories/:id
 
-Update categories data
+      	Update categories data
 
-- [DELETE] /v1/categories/:id
+  **Sample Data**
 
-Delete categories
+  ```
+  name: your-name-categories
+  ```
 
-- [POST] /api/v1/categories {name}
+- **[DELETE]** /v1/categories/:id
 
-Insert categories
+      	Delete categories
+
+- **[POST]** /api/v1/categories
+
+      	Insert categories
+
+  **Sample Data**
+
+  ```
+  name: your-name-categories
+  ```
 
 **PRODUCTS**
 
-- [GET] /api/v1/products
+- **[GET]** /api/v1/products
 
-Get all products
+      	Get all products
 
-- [GET] /api/v1/products/:id
+- **[GET]** /api/v1/products/:id
 
-Get products detail
+      	Get products detail
 
-- [PATCH] /api/v1/products/:id {name, description, image, price, category_id}
+- **[PATCH]** /api/v1/products/:id
 
-Update products data
+      	Update products data
 
-- [DELETE] /v1/products/:id
+  **Sample Data**
 
-Delete products
+  ```
+  name: product-name
+  description: product-description
+  image: product-image-url
+  price: product-price
+  category_id: product-category_id
+  ```
 
-- [POST] /api/v1/products {name, email, password}
+- **[DELETE]** /v1/products/:id
 
-Insert products
+      	Delete products
 
-- [GET] /api/v1/products/search/:name
+- **[POST]** /api/v1/products
 
-Search products by name
+      	Insert products
 
-- [GET] /api/v1/products/sort/:sort {name, description, image, price, category_id}
+  **Sample Data**
 
-Sort products by name, category, last_update
+  ```
+  name: product-name
+  description: product-description
+  image: product-image-url
+  price: product-price
+  category_id: product-category_id
+  ```
 
-- [GET] /api/v1/products/page/:page
+- **[GET]** /api/v1/products/search/:name
 
-Get products list with pagination
+      	Search products by name
+
+- **[GET]** /api/v1/products/sort/:sort
+
+      	Sort products by name, category, last_update
+
+- **[GET]** /api/v1/products/page/:page
+
+      	Get products list with pagination
 
 **STOCKS**
 
-- [GET] /api/v1/stocks
+- **[GET]** /api/v1/stocks
 
-Get all stocks
+      	Get all stocks
 
-- [PATCH] /api/v1/stocks/:id {product_id, type, qty, description}
+- **[PATCH]** /api/v1/stocks/:id
 
-Update stocks data
+      	Update stocks data
 
-- [DELETE] /v1/stocks/:id
+  **Sample Data**
 
-Delete stocks
+  ```
+  product_id: product-id
+  type: ENUM("IN/OUT")
+  qty: Integer Number
+  description: your-description
+  ```
 
-- [POST] /api/v1/stocks {product_id, type, qty, description}
+- **[DELETE]** /v1/stocks/:id
 
-Insert stocks
+      	Delete stocks
+
+- **[POST]** /api/v1/stocks
+
+      	Insert stocks
+
+  **Sample Data**
+
+  ```
+  product_id: product-id
+  type: ENUM("IN/OUT")
+  qty: Integer Number
+  description: your-description
+  ```
 
 **CHECKOUT**
 
-- [GET] /api/v1/checkout
+- **[GET]** /api/v1/checkout
 
-Get all checkout
+      	Get all checkout
 
-- [GET] /api/v1/checkout/cart
+- **[GET]** /api/v1/checkout/cart
 
-Get checkout from user login
+      	Get checkout from user login
 
-- [POST] /api/v1/checkout {order_number}
+- **[POST]** /api/v1/checkout
 
-Insert checkout
+      	Insert checkout
 
-- [POST] /api/v1/checkout/cart {order_id, product_id, qty}
+  **Sample Data**
 
-Insert product to checkout cart
+  ```
+  order_number: your-order-number
+  ```
+
+- **[POST]** /api/v1/checkout/cart
+
+      	Insert product to checkout cart
+
+  **Sample Data**
+
+  ```
+  order_id: order-id
+  product_id: product-id
+  qty: order-product-qty
+  ```
 
 **HISTORY**
 
-- [GET] /api/v1/history
+- **[GET]** /api/v1/history
 
-Get reporting on income today, yearly, and orders weekly
+      	Get reporting on income today, yearly, and orders weekly
+
+## Related Project
+
+- [`D'Jago Frontend React Redux (Front-end Web App)`](https://github.com/argadeva/djago-frontend-react-redux)
+- [`D'Jago React Native (Mobile App)`](https://github.com/argadeva/djago-react-native)
