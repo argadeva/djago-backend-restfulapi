@@ -131,7 +131,7 @@ https://localhost:1000/api/v1/
   password: your-password
   ```
 
-- **[POST]** /api/v1/users/login {email, password}
+- **[POST]** /api/v1/users/login
 
   Login user
 
