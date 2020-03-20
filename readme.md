@@ -135,12 +135,12 @@ https://localhost:1000/api/v1/
 
   Login user
 
-**Sample Data**
+  **Sample Data**
 
-    ```
-    email: your-email
-    password: your-password
-    ```
+  ```
+  email: your-email
+  password: your-password
+  ```
 
 - **[POST]** /api/v1/users/logout
 
@@ -158,13 +158,13 @@ https://localhost:1000/api/v1/
 
 - **[PATCH]** /api/v1/categories/:id
 
-Update categories data
+  Update categories data
 
-    **Sample Data**
+  **Sample Data**
 
-    ```
-    name: your-name-categories
-    ```
+  ```
+  name: your-name-categories
+  ```
 
 - **[DELETE]** /v1/categories/:id
 
