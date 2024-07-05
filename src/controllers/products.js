@@ -1,9 +1,6 @@
 const productsModel = require("../models/products"),
-  miscHelper = require("../helpers/message");
-
-const fs = require("fs");
-const { promisify } = require("util");
-const unlinkAsync = promisify(fs.unlink);
+miscHelper = require("../helpers/message");
+const updateImageMiddleware = require("../configs/deleteImageCloudinary");
 
 module.exports = {
   getProducts: (req, res) => {
@@ -37,14 +34,12 @@ module.exports = {
   },
   addProducts: (req, res) => {
     const { name, description, price, stock, category_id } = req.body;
+    const fileUrl = req.file.path;
     const data = {
       name,
       description,
       price,
-      image:
-        typeof req.file !== "undefined"
-          ? `${process.env.URL}uploads/${req.file.filename}`
-          : "",
+      image: fileUrl,
       stock,
       category_id
     };
@@ -71,11 +66,11 @@ module.exports = {
       productsModel
         .detailProducts(id_product)
         .then(result => {
-          unlinkAsync(result[0].image.replace(process.env.URL, ""));
+          updateImageMiddleware(result[0].image);
         })
         .catch(err => console.log(err));
       Object.assign(data, {
-        image: `${process.env.URL}uploads/${req.file.filename}`
+        image: req.file.path,
       });
     } else {
       productsModel
@@ -124,7 +119,7 @@ module.exports = {
                 productsModel
                   .deleteProducts(id_product)
                   .then(results => {
-                    unlinkAsync(result[0].image.replace(process.env.URL, ""));
+                    updateImageMiddleware(result[0].image);
                     miscHelper.response(
                       res,
                       results,

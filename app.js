@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const cors = require("cors");
 const morgan = require("morgan");
+// eslint-disable-next-line no-undef
 const port = process.env.SERVER_PORT;
 
 app.use(cors());
