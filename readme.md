@@ -2,7 +2,7 @@
 <br>
 <img src="https://github.com/argadeva/djago-backend-restfulapi/raw/master/demo/logo.png" width="200">
 <br>
-D'Jago Backend RestFulAPI
+D'Jago POS Backend RestFulAPI
 <br>
 </h1>
 
